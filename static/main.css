@@ -255,3 +255,6 @@ nav.stroke ul li a:hover {
 .tilt-card:hover .tilt-card__inner .tilt-card__text {
   color: rgba(255, 255, 255, 0.9);
 }
+a {
+  text-decoration: none;
+}
