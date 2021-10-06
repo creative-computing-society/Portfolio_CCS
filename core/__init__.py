@@ -9,6 +9,7 @@ def get_context():
             title = file.split(".")[0].replace("_", " ")
             name = title.split(" ")[1:]
             name = " ".join(name)
+            name = name.upper()
             rollNo = title.split(" ")[0]
             url = "pages/" + file
             context.append({"name": name, "rollNo": rollNo, "url": url})

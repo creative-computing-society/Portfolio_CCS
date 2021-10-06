@@ -11,18 +11,17 @@
       crossorigin="anonymous"
     />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
-    <!-- <link href="https://unpkg.com/vanilla-tilt@1.4.1/lib/vanilla-tilt.js"/> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"/>
-    <link rel="stylesheet" type="text/css" href="../static/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
 
-    <title>Document</title>
+    <title>Hacktoberfest 2021</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top stroke navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand main-col" href="#"
           ><img
-            src="../static/Traced-Logo_1.png"
+            src="{{ url_for('static', filename='Traced-Logo_1.png') }}"
             alt=""
             class="ccslogo"
             width="100"
@@ -457,7 +456,7 @@
             </p>
           </div>
           <div class="right-col">
-            <img src="../static/ccsbulb.png" alt="" class="ccsbulb" />
+            <img src="{{ url_for('static', filename='ccsbulb.png') }}" alt="" class="ccsbulb" />
           </div>
         </div>
       </div>
@@ -467,66 +466,19 @@
 <div class="container" id="servicios">
   <h1 class="servicios__title">Contributors</h1>
   <div class="row">
+    {% for page in pages %}
     <div class="col-md-4">
-      <a href="">
+      <a href="{{ page.url }}">
       <div class="tilt-card" data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt data-tilt-scale="1.05">
         <div class="tilt-card__bg" style="background-image: url(https://i0.wp.com/www.bc-security.org/wp-content/uploads/2019/05/Hacktoberfest_Wallpaper_desktop-02.png?fit=1920%2C1080&ssl=1);
         background-position: bottom; background-size: cover;"></div>
         <div class="tilt-card__inner">
-          <h3 class="tilt-card__title">SAMIK MALHOTRA</h3>
-          <p class="tilt-card__text">102018031</p>
+          <h3 class="tilt-card__title">{{ page.name }}</h3>
+          <p class="tilt-card__text">{{ page.rollNo }}</p>
         </div>
       </div></a>
     </div>
-    <div class="col-md-4">
-      <div class="tilt-card" data-tilt data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt data-tilt-scale="1.1">
-        <div class="tilt-card__bg" style="background-image: url(https://i0.wp.com/www.bc-security.org/wp-content/uploads/2019/05/Hacktoberfest_Wallpaper_desktop-02.png?fit=1920%2C1080&ssl=1); background-position: bottom; background-size: cover;"></div>
-        <div class="tilt-card__inner">
-          <h3 class="tilt-card__title">SAMIK MALHOTRA </h3>
-          <p class="tilt-card__text">102018031</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="tilt-card" data-tilt data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt data-tilt-scale="1.1">
-        <div class="tilt-card__bg" style="background-image: url(https://i0.wp.com/www.bc-security.org/wp-content/uploads/2019/05/Hacktoberfest_Wallpaper_desktop-02.png?fit=1920%2C1080&ssl=1);
-        background-position: bottom; background-size: cover;"></div>
-        <div class="tilt-card__inner">
-          <h3 class="tilt-card__title">SAMIK MALHOTRA</h3>
-          <p class="tilt-card__text">102018031</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="tilt-card" data-tilt data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt data-tilt-scale="1.1">
-        <div class="tilt-card__bg" style="background-image: url(https://i0.wp.com/www.bc-security.org/wp-content/uploads/2019/05/Hacktoberfest_Wallpaper_desktop-02.png?fit=1920%2C1080&ssl=1);
-        background-position: bottom; background-size: cover;"></div>
-        <div class="tilt-card__inner">
-          <h3 class="tilt-card__title">SAMIK MALHOTRA</h3>
-          <p class="tilt-card__text">102018031</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="tilt-card" data-tilt data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt data-tilt-scale="1.1">
-        <div class="tilt-card__bg" style="background-image: url(https://i0.wp.com/www.bc-security.org/wp-content/uploads/2019/05/Hacktoberfest_Wallpaper_desktop-02.png?fit=1920%2C1080&ssl=1);
-        background-position: bottom; background-size: cover;"></div>
-        <div class="tilt-card__inner">
-          <h3 class="tilt-card__title">SAMIK MALHOTRA</h3>
-          <p class="tilt-card__text">102018031</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="tilt-card" data-tilt data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt data-tilt-scale="1.1">
-        <div class="tilt-card__bg" style="background-image: url(https://i0.wp.com/www.bc-security.org/wp-content/uploads/2019/05/Hacktoberfest_Wallpaper_desktop-02.png?fit=1920%2C1080&ssl=1);
-        background-position: bottom; background-size: cover;"></div>
-        <div class="tilt-card__inner">
-          <h3 class="tilt-card__title">SAMIK MALHOTRA</h3>
-          <p class="tilt-card__text">102018031</p>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
     
@@ -541,7 +493,7 @@
       crossorigin="anonymous"
     ></script>
   
-<script src="../static/index.js"></script>
+<script src="{{ url_for('static', filename='index.js') }}"></script>
     
   </body>
 </html>
