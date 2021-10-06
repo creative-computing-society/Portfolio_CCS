@@ -19,11 +19,15 @@ def get_context():
 class TestCore(unittest.TestCase):
     def test_file_extension(self):
         for file in os.listdir("templates/pages"):
+            if file == ".gitkeep":
+                continue
             extension = file.split(".")[1]
             self.assertEqual(extension, "html")
 
     def test_file_name_format(self):
         for file in os.listdir("templates/pages"):
+            if file == ".gitkeep":
+                continue
             name = file.split(".")[0].split("_", 1)[1]
             rollNo = file.split(".")[0].split("_")[0]
             self.assertIsNotNone(name)
