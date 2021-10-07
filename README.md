@@ -34,7 +34,9 @@
    ```bash
    $ git push
    ```
-   - You are now ready to open a Pull Request!
+   - You are now ready to open a Pull Request! <br> <br>
+      <img src='https://user-images.githubusercontent.com/65218249/136403417-ca86ff2f-21e1-414f-98fc-3f841f89a73c.png' width='500px' >
+
    - If you want to run flask server locally, refer below.
 ## Setup Flask Server Locally
    Make sure you have Python and pip installed before proceeding further.
