@@ -43,5 +43,5 @@ Greetings contributors! Let's get you started with your open source journey ✨
    ```
    - To run the server 
    ```bash
-   python app.py 
+   $ python app.py 
    ```
