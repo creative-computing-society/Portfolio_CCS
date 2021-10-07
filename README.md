@@ -28,3 +28,20 @@ Greetings contributors! Let's get you started with your open source journey ✨
    $ git push
    ```
    - You are now ready to open a Pull Request!
+   - If you want to run flask server locally, refer here.
+## Setup Flask Server Locally
+   Make sure you have Python and pip installed before proceeding further.
+   - Setup a virtual Environment, we have used pipenv for the same
+   ```bash
+   $ pip install pipenv
+   $ pipenv install
+   $ pipenv shell
+   ```
+   - Install all dependencies (within the virtual environment)
+   ```bash
+   $ pip install -r requirements.txt
+   ```
+   - To run the server 
+   ```bash
+   python app.py 
+   ```
