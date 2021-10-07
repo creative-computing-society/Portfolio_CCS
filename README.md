@@ -1,5 +1,12 @@
+
 # Portfolio Wall for Batch of 2025 at TIET
-Greetings contributors! Let's get you started with your open source journey ✨
+   <div align='center'>
+   <img src ="./static/Traced-Logo_1.png" width="500px">
+   
+   ### Greetings contributors! Let's get you started with your open source journey ✨
+   </div>
+   
+
 
 ## Setup the repository <br>
 
@@ -28,7 +35,7 @@ Greetings contributors! Let's get you started with your open source journey ✨
    $ git push
    ```
    - You are now ready to open a Pull Request!
-   - If you want to run flask server locally, refer here.
+   - If you want to run flask server locally, refer below.
 ## Setup Flask Server Locally
    Make sure you have Python and pip installed before proceeding further.
    - Setup a virtual Environment, we have used pipenv for the same
@@ -45,3 +52,6 @@ Greetings contributors! Let's get you started with your open source journey ✨
    ```bash
    $ python app.py 
    ```
+<hr>
+
+
