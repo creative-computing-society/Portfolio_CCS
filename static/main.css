@@ -68,8 +68,6 @@ body {
 .main-col {
   color: #ff4c29 !important;
 }
-.ccslogo {
-}
 nav ul {
   list-style: none;
   text-align: center;
@@ -229,6 +227,7 @@ nav.stroke ul li a:hover {
   text-align: center;
   margin: 1.6rem auto;
   font-family: 'Lato', sans-serif;
+  word-break: break-word;
 }
 .tilt-card .tilt-card__inner .tilt-card__text {
   text-align: center;
